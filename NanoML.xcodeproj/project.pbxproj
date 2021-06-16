@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECA1990D267A1EF700A87221 /* NanoMLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA1990C267A1EF700A87221 /* NanoMLApp.swift */; };
+		ECA1990F267A1EF700A87221 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA1990E267A1EF700A87221 /* ContentView.swift */; };
+		ECA19911267A1EF800A87221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA19910267A1EF800A87221 /* Assets.xcassets */; };
+		ECA19914267A1EF800A87221 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA19913267A1EF800A87221 /* Preview Assets.xcassets */; };
+		ECA1991F267A1EF900A87221 /* NanoMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA1991E267A1EF900A87221 /* NanoMLTests.swift */; };
+		ECA1992A267A1EF900A87221 /* NanoMLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA19929267A1EF900A87221 /* NanoMLUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECA1991B267A1EF900A87221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECA19901267A1EF700A87221 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECA19908267A1EF700A87221;
+			remoteInfo = NanoML;
+		};
+		ECA19926267A1EF900A87221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECA19901267A1EF700A87221 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECA19908267A1EF700A87221;
+			remoteInfo = NanoML;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECA19909267A1EF700A87221 /* NanoML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoML.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA1990C267A1EF700A87221 /* NanoMLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoMLApp.swift; sourceTree = "<group>"; };
+		ECA1990E267A1EF700A87221 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ECA19910267A1EF800A87221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECA19913267A1EF800A87221 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ECA19915267A1EF800A87221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA1991A267A1EF900A87221 /* NanoMLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanoMLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA1991E267A1EF900A87221 /* NanoMLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoMLTests.swift; sourceTree = "<group>"; };
+		ECA19920267A1EF900A87221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA19925267A1EF900A87221 /* NanoMLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanoMLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA19929267A1EF900A87221 /* NanoMLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoMLUITests.swift; sourceTree = "<group>"; };
+		ECA1992B267A1EF900A87221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECA19906267A1EF700A87221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA19917267A1EF900A87221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA19922267A1EF900A87221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECA19900267A1EF700A87221 = {
+			isa = PBXGroup;
+			children = (
+				ECA1990B267A1EF700A87221 /* NanoML */,
+				ECA1991D267A1EF900A87221 /* NanoMLTests */,
+				ECA19928267A1EF900A87221 /* NanoMLUITests */,
+				ECA1990A267A1EF700A87221 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECA1990A267A1EF700A87221 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECA19909267A1EF700A87221 /* NanoML.app */,
+				ECA1991A267A1EF900A87221 /* NanoMLTests.xctest */,
+				ECA19925267A1EF900A87221 /* NanoMLUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECA1990B267A1EF700A87221 /* NanoML */ = {
+			isa = PBXGroup;
+			children = (
+				ECA1990C267A1EF700A87221 /* NanoMLApp.swift */,
+				ECA1990E267A1EF700A87221 /* ContentView.swift */,
+				ECA19910267A1EF800A87221 /* Assets.xcassets */,
+				ECA19915267A1EF800A87221 /* Info.plist */,
+				ECA19912267A1EF800A87221 /* Preview Content */,
+			);
+			path = NanoML;
+			sourceTree = "<group>";
+		};
+		ECA19912267A1EF800A87221 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ECA19913267A1EF800A87221 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ECA1991D267A1EF900A87221 /* NanoMLTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECA1991E267A1EF900A87221 /* NanoMLTests.swift */,
+				ECA19920267A1EF900A87221 /* Info.plist */,
+			);
+			path = NanoMLTests;
+			sourceTree = "<group>";
+		};
+		ECA19928267A1EF900A87221 /* NanoMLUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ECA19929267A1EF900A87221 /* NanoMLUITests.swift */,
+				ECA1992B267A1EF900A87221 /* Info.plist */,
+			);
+			path = NanoMLUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECA19908267A1EF700A87221 /* NanoML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA1992E267A1EF900A87221 /* Build configuration list for PBXNativeTarget "NanoML" */;
+			buildPhases = (
+				ECA19905267A1EF700A87221 /* Sources */,
+				ECA19906267A1EF700A87221 /* Frameworks */,
+				ECA19907267A1EF700A87221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NanoML;
+			productName = NanoML;
+			productReference = ECA19909267A1EF700A87221 /* NanoML.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECA19919267A1EF900A87221 /* NanoMLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA19931267A1EF900A87221 /* Build configuration list for PBXNativeTarget "NanoMLTests" */;
+			buildPhases = (
+				ECA19916267A1EF900A87221 /* Sources */,
+				ECA19917267A1EF900A87221 /* Frameworks */,
+				ECA19918267A1EF900A87221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECA1991C267A1EF900A87221 /* PBXTargetDependency */,
+			);
+			name = NanoMLTests;
+			productName = NanoMLTests;
+			productReference = ECA1991A267A1EF900A87221 /* NanoMLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECA19924267A1EF900A87221 /* NanoMLUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA19934267A1EF900A87221 /* Build configuration list for PBXNativeTarget "NanoMLUITests" */;
+			buildPhases = (
+				ECA19921267A1EF900A87221 /* Sources */,
+				ECA19922267A1EF900A87221 /* Frameworks */,
+				ECA19923267A1EF900A87221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECA19927267A1EF900A87221 /* PBXTargetDependency */,
+			);
+			name = NanoMLUITests;
+			productName = NanoMLUITests;
+			productReference = ECA19925267A1EF900A87221 /* NanoMLUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECA19901267A1EF700A87221 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					ECA19908267A1EF700A87221 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					ECA19919267A1EF900A87221 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = ECA19908267A1EF700A87221;
+					};
+					ECA19924267A1EF900A87221 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = ECA19908267A1EF700A87221;
+					};
+				};
+			};
+			buildConfigurationList = ECA19904267A1EF700A87221 /* Build configuration list for PBXProject "NanoML" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECA19900267A1EF700A87221;
+			productRefGroup = ECA1990A267A1EF700A87221 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECA19908267A1EF700A87221 /* NanoML */,
+				ECA19919267A1EF900A87221 /* NanoMLTests */,
+				ECA19924267A1EF900A87221 /* NanoMLUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECA19907267A1EF700A87221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA19914267A1EF800A87221 /* Preview Assets.xcassets in Resources */,
+				ECA19911267A1EF800A87221 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA19918267A1EF900A87221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA19923267A1EF900A87221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECA19905267A1EF700A87221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA1990F267A1EF700A87221 /* ContentView.swift in Sources */,
+				ECA1990D267A1EF700A87221 /* NanoMLApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA19916267A1EF900A87221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA1991F267A1EF900A87221 /* NanoMLTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA19921267A1EF900A87221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA1992A267A1EF900A87221 /* NanoMLUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECA1991C267A1EF900A87221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECA19908267A1EF700A87221 /* NanoML */;
+			targetProxy = ECA1991B267A1EF900A87221 /* PBXContainerItemProxy */;
+		};
+		ECA19927267A1EF900A87221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECA19908267A1EF700A87221 /* NanoML */;
+			targetProxy = ECA19926267A1EF900A87221 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ECA1992C267A1EF900A87221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECA1992D267A1EF900A87221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECA1992F267A1EF900A87221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NanoML/Preview Content\"";
+				DEVELOPMENT_TEAM = YBM22U9FU3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = NanoML/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Fernando-de-Lucas.NanoML";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECA19930267A1EF900A87221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NanoML/Preview Content\"";
+				DEVELOPMENT_TEAM = YBM22U9FU3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = NanoML/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Fernando-de-Lucas.NanoML";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECA19932267A1EF900A87221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YBM22U9FU3;
+				INFOPLIST_FILE = NanoMLTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Fernando-de-Lucas.NanoMLTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NanoML.app/NanoML";
+			};
+			name = Debug;
+		};
+		ECA19933267A1EF900A87221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YBM22U9FU3;
+				INFOPLIST_FILE = NanoMLTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Fernando-de-Lucas.NanoMLTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NanoML.app/NanoML";
+			};
+			name = Release;
+		};
+		ECA19935267A1EF900A87221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YBM22U9FU3;
+				INFOPLIST_FILE = NanoMLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Fernando-de-Lucas.NanoMLUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NanoML;
+			};
+			name = Debug;
+		};
+		ECA19936267A1EF900A87221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YBM22U9FU3;
+				INFOPLIST_FILE = NanoMLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Fernando-de-Lucas.NanoMLUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NanoML;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECA19904267A1EF700A87221 /* Build configuration list for PBXProject "NanoML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA1992C267A1EF900A87221 /* Debug */,
+				ECA1992D267A1EF900A87221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA1992E267A1EF900A87221 /* Build configuration list for PBXNativeTarget "NanoML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA1992F267A1EF900A87221 /* Debug */,
+				ECA19930267A1EF900A87221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA19931267A1EF900A87221 /* Build configuration list for PBXNativeTarget "NanoMLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA19932267A1EF900A87221 /* Debug */,
+				ECA19933267A1EF900A87221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA19934267A1EF900A87221 /* Build configuration list for PBXNativeTarget "NanoMLUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA19935267A1EF900A87221 /* Debug */,
+				ECA19936267A1EF900A87221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECA19901267A1EF700A87221 /* Project object */;
+}
