@@ -9,9 +9,33 @@ import Foundation
 class NearestNeighbors {
     var classes : [KNNClass] = []
     var computedDistances : [Distance] = []
-
+    var p: Double = 2.0
     
-    func predict(data: [Double]) {
+    func predict(data: [Double], metric: DistanceMetric) {
+        computedDistances = []
+        switch metric {
+        case .euclidean:
+            self.euclidean(data: data)
+        case .manhatan:
+            self.manhatan(data: data)
+        case .chebyshev:
+            self.chebyvesk(data: data)
+        case .minkowski:
+            self.minkowski(data: data)
+        }
+    }
+    
+    func showNearest(k: Int) {
+        self.computedDistances.sort()
+        print(computedDistances)
+        let nearestDistances = computedDistances.prefix(k)
+        let counting = nearestDistances.reduce(into: [:]) { counts, distance in
+            counts[distance.identifier, default: 0] += 1
+        }
+        print(counting)
+    }
+    
+    func euclidean(data: [Double]){
         classes.forEach {
             let identifier = $0.identifier
             $0.points.forEach {
@@ -23,17 +47,58 @@ class NearestNeighbors {
                 computedDistances.append(Distance(distance: sqrt, identifier: identifier))
             }
         }
-        self.computedDistances.sort()
     }
     
-    func showNearest(k: Int) {
-        let nearestDistances = computedDistances.prefix(k)
-        let counting = nearestDistances.reduce(into: [:]) { counts, distance in
-            counts[distance.identifier, default: 0] += 1
+    func manhatan(data: [Double]){
+        classes.forEach {
+            let identifier = $0.identifier
+            $0.points.forEach {
+                var sum: Double = 0
+                for i in 0..<$0.count{
+                    sum += abs($0[i] - data[i])
+                }
+                computedDistances.append(Distance(distance: sum, identifier: identifier))
+            }
         }
-        print(counting)
     }
     
+    func chebyvesk(data: [Double]){
+        classes.forEach {
+            let identifier = $0.identifier
+            $0.points.forEach {
+                var sum: [Double] = []
+                for i in 0..<$0.count{
+                    sum.append(abs($0[i] - data[i]))
+                }
+                let max = sum.max() ?? 0
+                computedDistances.append(Distance(distance: max, identifier: identifier))
+            }
+        }
+    }
+    
+    func minkowski(data: [Double]){
+        classes.forEach {
+            let identifier = $0.identifier
+            $0.points.forEach {
+                var sum: Double = 0
+                for i in 0..<$0.count{
+                    sum += pow(($0[i]-data[i]), p)
+                }
+                let distance = sum.squareRoot()/p
+                computedDistances.append(Distance(distance: distance, identifier: identifier))
+            }
+        }
+    }
+    
+    func pow <T: Numeric>(_ base: T, _ power: Double) -> T {
+      var answer : T = 1
+      for _ in 0..<Int(power) { answer *= base }
+      return answer
+    }
+}
+
+enum DistanceMetric{
+    case euclidean, manhatan, chebyshev, minkowski
 }
 
 struct KNNClass{

@@ -53,7 +53,7 @@ struct ContentView: View {
     
     func calculate(){
         knn.classes = [firstClass, secondClass]
-        knn.predict(data: [1,2])
+        knn.predict(data: [3,6], metric: .minkowski)
         knn.showNearest(k: 5)
     }
 }
