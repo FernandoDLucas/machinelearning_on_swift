@@ -7,9 +7,13 @@
 
 import Foundation
 class NearestNeighbors {
-    var classes : [KNNClass] = []
-    var computedDistances : [Distance] = []
+    private (set) var classes : [KNNClass]
+    private (set) var computedDistances : [Distance] = []
     var p: Double = 2.0
+    
+    init(classes: [KNNClass]){
+        self.classes = classes
+    }
     
     func predict(data: [Double], metric: DistanceMetric) {
         computedDistances = []
@@ -25,17 +29,17 @@ class NearestNeighbors {
         }
     }
     
-    func showNearest(k: Int) {
+    func getNearest(k: Int) -> [String:Int] {
         self.computedDistances.sort()
-        print(computedDistances)
         let nearestDistances = computedDistances.prefix(k)
         let counting = nearestDistances.reduce(into: [:]) { counts, distance in
             counts[distance.identifier, default: 0] += 1
         }
         print(counting)
+        return counting
     }
     
-    func euclidean(data: [Double]){
+    func euclidean(data: [Double]) {
         classes.forEach {
             let identifier = $0.identifier
             $0.points.forEach {
@@ -49,7 +53,7 @@ class NearestNeighbors {
         }
     }
     
-    func manhatan(data: [Double]){
+    func manhatan(data: [Double]) {
         classes.forEach {
             let identifier = $0.identifier
             $0.points.forEach {
@@ -62,7 +66,7 @@ class NearestNeighbors {
         }
     }
     
-    func chebyvesk(data: [Double]){
+    func chebyvesk(data: [Double]) {
         classes.forEach {
             let identifier = $0.identifier
             $0.points.forEach {
@@ -76,7 +80,7 @@ class NearestNeighbors {
         }
     }
     
-    func minkowski(data: [Double]){
+    func minkowski(data: [Double]) {
         classes.forEach {
             let identifier = $0.identifier
             $0.points.forEach {
@@ -97,11 +101,11 @@ class NearestNeighbors {
     }
 }
 
-enum DistanceMetric{
+enum DistanceMetric {
     case euclidean, manhatan, chebyshev, minkowski
 }
 
-struct KNNClass{
+struct KNNClass {
     var points: [[Double]]
     var identifier: String
     
@@ -111,7 +115,7 @@ struct KNNClass{
     }
 }
 
-struct Distance : Comparable{
+struct Distance : Comparable {
 
     var distance: Double
     var identifier: String
@@ -124,11 +128,11 @@ extension Double {
     }
 }
 
-extension Sequence where Element: Numeric{
+extension Sequence where Element: Numeric {
     func sum() -> Element {reduce(0, +)}
 }
 
-extension Distance{
+extension Distance {
     static func < (lhs: Distance, rhs: Distance) -> Bool {
         return lhs.distance < rhs.distance
     }
