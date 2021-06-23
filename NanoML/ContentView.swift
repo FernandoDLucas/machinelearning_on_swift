@@ -23,9 +23,9 @@ struct ContentView: View {
         let secClass = KNNClass(points: data.versicolor, classIdentifier: "Versicolor")
         let thitClass = KNNClass(points: data.virginica, classIdentifier: "Virginica")
         
-        let knn = NearestNeighbors(classes: [firstClass, secClass, thitClass])
-        knn.predict(data: [7,3.1,0.3], metric: .euclidean)
-        _ = knn.getNearest(k: 5)
+        let knn = KNearestNeighbors(classes: [firstClass, secClass, thitClass])
+        knn.calculate(data: [7,3.1,0.3], metric: .euclidean)
+        _ = knn.getNearest(K: 5)
     }
 }
 
