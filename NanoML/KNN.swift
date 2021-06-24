@@ -52,12 +52,17 @@ class KNearestNeighbors {
     /// Get the K-Nearest neightbours for the previous given on `
     /// - Parameter K: The numbers of near neightbours you want to compare.
     /// - Returns: Returns an array containing the class identifier and the number of ocurrences in the k-nearest datas.
-    func getNearest(K: Int) -> [String:Int] {
+    func getNearest(K: Int) -> [String:Int]? {
+        guard K <= computedDistances.count else {
+            print("Expect that K was shorter than the number of data points")
+            return nil
+        }
         self.computedDistances.sort()
         let nearestDistances = computedDistances.prefix(K)
         let counting = nearestDistances.reduce(into: [:]) { counts, distance in
             counts[distance.identifier, default: 0] += 1
         }
+        print(counting)
         return counting
     }
     

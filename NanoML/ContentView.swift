@@ -8,29 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
-    let data = IrisData()
-
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
-            .onAppear(
-                perform: self.calculate
-            )
-    }
+    @ObservedObject var viewModel = ViewModel()
+    @State var x: String = ""
+    @State var y: String = ""
+    @State var z: String = ""
     
-    func calculate(){
-        let firstClass = KNNClass(points: data.setosa, classIdentifier: "Setosa")
-        let secClass = KNNClass(points: data.versicolor, classIdentifier: "Versicolor")
-        let thitClass = KNNClass(points: data.virginica, classIdentifier: "Virginica")
-        
-        let knn = KNearestNeighbors(classes: [firstClass, secClass, thitClass])
-        knn.calculate(data: [7,3.1,0.3], metric: .euclidean)
-        _ = knn.getNearest(K: 5)
-    }
+    var body: some View {
+        VStack{
+        LinearGradient(gradient: Gradient(colors: [.purple, .white]), startPoint: .top, endPoint: .bottom)
+          .mask(Image("vanilla-flower")
+            .resizable()
+            .padding()
+            .aspectRatio(contentMode: .fit)
+          ).frame(width: 100, height: 100, alignment: .center)
+            Text("Iris Classifier").foregroundColor(.purple)
+        }
+        VStack{
+            TextField("X", text: $x).foregroundColor(.purple)
+            TextField("Y", text: $y).foregroundColor(.purple)
+            TextField("Z", text: $z).foregroundColor(.purple)
+        }.textFieldStyle(RoundedBorderTextFieldStyle())
+        .padding(.leading, 100)
+        .padding(.trailing, 100)
+        Button(action: prepareTo) {
+            Text("Classificar")
+        }
+        .padding(.bottom, 17)
+        ForEach(viewModel.itens, id: \.self) { itens in
+            HStack{
+                Text(itens.name + ":")
+                Text("\(itens.ocurency)")
+            }
+        }
 }
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    func prepareTo(){
+        viewModel.calculate(x: Double(self.x)!, y: Double(self.y)!, z: Double(self.z)!)
     }
+
 }

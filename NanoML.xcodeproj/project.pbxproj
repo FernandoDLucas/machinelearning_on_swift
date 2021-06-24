@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC5B0D912684AC2100771B4F /* View Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B0D902684AC2100771B4F /* View Model.swift */; };
 		EC672069268218C600657556 /* IrisData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC672068268218C600657556 /* IrisData.swift */; };
 		ECA1990D267A1EF700A87221 /* NanoMLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA1990C267A1EF700A87221 /* NanoMLApp.swift */; };
 		ECA1990F267A1EF700A87221 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA1990E267A1EF700A87221 /* ContentView.swift */; };
@@ -15,7 +16,6 @@
 		ECA1991F267A1EF900A87221 /* NanoMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA1991E267A1EF900A87221 /* NanoMLTests.swift */; };
 		ECA1992A267A1EF900A87221 /* NanoMLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA19929267A1EF900A87221 /* NanoMLUITests.swift */; };
 		ECA19938267A1F1200A87221 /* KNN.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA19937267A1F1200A87221 /* KNN.swift */; };
-		ECA1993A267B749800A87221 /* viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA19939267B749800A87221 /* viewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC5B0D902684AC2100771B4F /* View Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View Model.swift"; sourceTree = "<group>"; };
 		EC672068268218C600657556 /* IrisData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrisData.swift; sourceTree = "<group>"; };
 		ECA19909267A1EF700A87221 /* NanoML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA1990C267A1EF700A87221 /* NanoMLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoMLApp.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		ECA19929267A1EF900A87221 /* NanoMLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoMLUITests.swift; sourceTree = "<group>"; };
 		ECA1992B267A1EF900A87221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECA19937267A1F1200A87221 /* KNN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KNN.swift; sourceTree = "<group>"; };
-		ECA19939267B749800A87221 /* viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +107,8 @@
 				ECA19915267A1EF800A87221 /* Info.plist */,
 				ECA19912267A1EF800A87221 /* Preview Content */,
 				ECA19937267A1F1200A87221 /* KNN.swift */,
-				ECA19939267B749800A87221 /* viewModel.swift */,
 				EC672068268218C600657556 /* IrisData.swift */,
+				EC5B0D902684AC2100771B4F /* View Model.swift */,
 			);
 			path = NanoML;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 				ECA19938267A1F1200A87221 /* KNN.swift in Sources */,
 				EC672069268218C600657556 /* IrisData.swift in Sources */,
 				ECA1990F267A1EF700A87221 /* ContentView.swift in Sources */,
-				ECA1993A267B749800A87221 /* viewModel.swift in Sources */,
+				EC5B0D912684AC2100771B4F /* View Model.swift in Sources */,
 				ECA1990D267A1EF700A87221 /* NanoMLApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
