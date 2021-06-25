@@ -124,7 +124,7 @@ class KNearestNeighbors {
             $0.points.forEach {
                 var sum: Double = 0
                 for i in 0..<$0.count{
-                    sum += pow(($0[i]-data[i]), p)
+                    sum += pow(abs($0[i]-data[i]), p)
                 }
                 let distance = sum.squareRoot()/p
                 computedDistances.append(Distance(distance: distance, identifier: identifier))
