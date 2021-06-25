@@ -29,6 +29,22 @@ class KNearestNeighbors {
     init(classes: [KNNClass]){
         self.classes = classes
     }
+    /// Get the K-Nearest neightbours for the previous given on `
+    /// - Parameter K: The numbers of near neightbours you want to compare.
+    /// - Returns: Returns an array containing the class identifier and the number of ocurrences in the k-nearest datas.
+    func getNearest(K: Int) -> [String:Int]? {
+        guard K <= computedDistances.count else {
+            print("Expect that K was shorter than the number of data points")
+            return nil
+        }
+        self.computedDistances.sort()
+        let nearestDistances = computedDistances.prefix(K)
+        let counting = nearestDistances.reduce(into: [:]) { counts, distance in
+            counts[distance.identifier, default: 0] += 1
+        }
+        print(counting)
+        return counting
+    }
     
     /// Use to calculate the distance between the given point and the other points on database;
     ///
@@ -47,23 +63,6 @@ class KNearestNeighbors {
         case .minkowski:
             self.minkowski(data: data)
         }
-    }
-    
-    /// Get the K-Nearest neightbours for the previous given on `
-    /// - Parameter K: The numbers of near neightbours you want to compare.
-    /// - Returns: Returns an array containing the class identifier and the number of ocurrences in the k-nearest datas.
-    func getNearest(K: Int) -> [String:Int]? {
-        guard K <= computedDistances.count else {
-            print("Expect that K was shorter than the number of data points")
-            return nil
-        }
-        self.computedDistances.sort()
-        let nearestDistances = computedDistances.prefix(K)
-        let counting = nearestDistances.reduce(into: [:]) { counts, distance in
-            counts[distance.identifier, default: 0] += 1
-        }
-        print(counting)
-        return counting
     }
     
     /// Calculate the Euclidean distance for the given data
@@ -145,7 +144,6 @@ enum DistanceMetric {
     case euclidean, manhatan, chebyshev, minkowski
 }
 
-
 /// Represents an set of data previous classified.
 struct KNNClass {
     var points: [[Double]]
@@ -162,6 +160,10 @@ struct Distance : Comparable {
 
     var distance: Double
     var identifier: String
+    
+    static func < (lhs: Distance, rhs: Distance) -> Bool {
+        return lhs.distance < rhs.distance
+    }
 }
 
 
@@ -173,10 +175,4 @@ extension Double {
 
 extension Sequence where Element: Numeric {
     func sum() -> Element {reduce(0, +)}
-}
-
-extension Distance {
-    static func < (lhs: Distance, rhs: Distance) -> Bool {
-        return lhs.distance < rhs.distance
-    }
 }
